@@ -1,0 +1,95 @@
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%) 0%, hsl(273, 75%, 66%) 20%, hsl(240, 73%, 65%) 120%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    color: hsl(238, 29%, 16%);
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    background-image: url("./images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 20px;
+    width: 330px;
+    height: 550px;
+    max-width: 90vw;
+    max-height: 75vh;
+    position: fixed;
+    top: 18%; /*130px*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#decorative-image {
+    position: relative;
+    top: -19%;
+    left: 18px;
+}
+
+#faq {
+    position: relative;
+    top: -12%;
+    padding: 0 20px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    cursor: pointer;
+    padding: 15px 0;
+    color: hsl(237, 12%, 33%);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    transition: ease .5s;
+}
+
+label:hover {
+    color:hsl(14, 88%, 65%)
+}
+
+input:checked + label {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+input:checked + label > #arrow {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform: rotateX(180deg);   
+}
+
+.content {
+    color: hsl(240, 6%, 50%);
+    padding-right: 30px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    font-size: 12px;
+    line-height: 1.2rem;
+}
+
+input + label + .content {
+    opacity: 0;
+    height: 0;
+    line-height: 0;
+    transition: ease .5s;
+}
+
+input:checked + label + .content {
+    opacity: 1;
+    height: 100%;
+    line-height: 1;
+}
