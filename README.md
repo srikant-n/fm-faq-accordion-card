@@ -4,7 +4,7 @@ Created using HTML and CSS.
 Challenge [readme](./readme-challenge.md/) and [design images](./design/) are available
 There is also a `style-guide.md` file, which contains the information needed for the challenge, such as color palette and fonts.
 
-<!-- [View result site](#) -->
+[View result site](https://srikant-n.github.io/fm-faq-accordion-card/index.html)
 
 [Challenge info on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)
 
