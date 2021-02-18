@@ -87,7 +87,7 @@ input:checked + label {
   font-weight: 700;
 }
 
-input:checked + label > #arrow {
+input:checked + label > .arrow {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
